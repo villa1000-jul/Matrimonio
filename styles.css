@@ -103,7 +103,7 @@ main {
     background-image: url("fondo.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain; /* Ajusta la imagen al tamaño de la carta sin cortarla */
+    background-size: cover; /* Ajusta la imagen al tamaño de la carta sin cortarla */
 }
 
 .trasera {
