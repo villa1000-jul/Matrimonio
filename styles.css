@@ -108,9 +108,9 @@ main {
     transform: rotateY(180deg);
 }
 
-.intro { font-size: 0.95rem; line-height: 1.2; margin-bottom: 8px; }
+.intro { font-size: 1.1rem; line-height: 1.2; margin-bottom: 8px; }
 .trasera h1 { font-size: 2.0rem; color: #ad9776; font-family: serif; margin-bottom: 8px; }
-.detalles p { font-size: 0.1rem; margin: 2px 0; }
+.detalles p { font-size: 1.1rem; margin: 2px 0; }
 
 .btn-whatsapp {
     display: inline-block;
