@@ -64,8 +64,8 @@ main {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-.pos-tl { top: -80px; left: -50px; transform: rotate(-12deg); }
-.pos-tr { top: -80px; right: -50px; transform: rotate(15deg); }
+.pos-tl { top: -70px; left: -50px; transform: rotate(-12deg); }
+.pos-tr { top: -70px; right: -50px; transform: rotate(15deg); }
 .pos-bl { bottom: -30px; left: -50px; transform: rotate(-8deg); }
 
 .carta {
