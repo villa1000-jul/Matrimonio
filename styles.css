@@ -55,8 +55,8 @@ main {
 
 .foto {
     position: absolute;
-    width: 130px;
-    height: 130px;
+    width: 180px;
+    height: 180px;
     object-fit: cover;
     border: 5px solid white;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
@@ -109,8 +109,8 @@ main {
 }
 
 .intro { font-size: 0.8rem; line-height: 1.2; margin-bottom: 8px; }
-.trasera h1 { font-size: 1.8rem; color: #ad9776; font-family: serif; margin-bottom: 8px; }
-.detalles p { font-size: 0.85rem; margin: 2px 0; }
+.trasera h1 { font-size: 2.2rem; color: #ad9776; font-family: serif; margin-bottom: 8px; }
+.detalles p { font-size: 1.8rem; margin: 2px 0; }
 
 .btn-whatsapp {
     display: inline-block;
