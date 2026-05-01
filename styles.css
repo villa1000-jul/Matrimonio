@@ -9,7 +9,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Playwrite NO', cursive; 
-    background-color: #ffffff;
+    background: url("fondo.png");
     overflow-x: hidden;
     width: 100%;
 } 
