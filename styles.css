@@ -8,11 +8,9 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 22px;
-    text-shadow: #ad9776 1px 1px 2px; /* Reducido para mejor legibilidad */
-    padding-bottom: 60px;
-    background-color: white;
+    background-color: #ffffff;
     overflow-x: hidden;
+    width: 100%;
 }
 
 header {
@@ -24,43 +22,49 @@ header {
     height: 100px;
 }
 
+header h1 {
+    font-size: 1.8rem;
+    text-shadow: #ad9776 2px 2px 2px;
+}
+
 main {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 80vh;
+    padding: 40px 10px;
+}
+
+/* Contenedor con tamaño adaptable */
+.card-container {
+    width: 90%;
+    max-width: 500px;
+    height: 400px;
+    perspective: 1500px;
     position: relative;
+    z-index: 1;
 }
 
 .decoraciones {
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 0;
-    left: 0;
-    pointer-events: none; /* Para que no bloqueen los clics a la carta */
+    pointer-events: none;
+    z-index: 10;
 }
 
 .foto {
     position: absolute;
-    width: 180px;
-    height: 180px;
+    width: 130px;
+    height: 130px;
     object-fit: cover;
-    border: 6px solid white;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    border: 5px solid white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-.pos-tl { top: 5%; left: 5%; transform: rotate(-12deg); }
-.pos-tr { top: 5%; right: 5%; transform: rotate(15deg); }
-.pos-bl { bottom: 5%; left: 8%; transform: rotate(-8deg); }
-
-.card-container {
-    width: 650px;
-    height: 450px;
-    perspective: 1500px;
-    z-index: 10;
-}
+.pos-tl { top: -50px; left: -90px; transform: rotate(-12deg); }
+.pos-tr { top: -50px; right: -90px; transform: rotate(15deg); }
+.pos-bl { bottom: -50px; left: -90px; transform: rotate(-8deg); }
 
 .carta {
     width: 100%;
@@ -80,7 +84,7 @@ main {
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    padding: 30px;
+    padding: 25px;
     border: 2px solid #ad9776;
     display: flex;
     flex-direction: column;
@@ -92,40 +96,42 @@ main {
     background-color: white;
 }
 
+/* AJUSTE DE LA IMAGEN DE CORAZONES */
 .frontal {
-    background: url("fondo.png") no-repeat center;
-    background-size: cover;
+    background-image: url("fondo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; /* Ajusta la imagen al tamaño de la carta sin cortarla */
 }
 
 .trasera {
     transform: rotateY(180deg);
 }
 
-.trasera h2 { font-size: 16px; font-weight: normal; margin-bottom: 10px; line-height: 1.2; text-shadow: none; }
-.trasera h1 { font-size: 35px; margin-bottom: 10px; color: #ad9776; }
-.trasera p { font-size: 15px; margin: 2px 0; text-shadow: none; }
-.detalles { margin-bottom: 15px; }
+.intro { font-size: 0.8rem; line-height: 1.2; margin-bottom: 8px; }
+.trasera h1 { font-size: 1.8rem; color: #ad9776; font-family: serif; margin-bottom: 8px; }
+.detalles p { font-size: 0.85rem; margin: 2px 0; }
 
 .btn-whatsapp {
     display: inline-block;
-    margin-top: 15px;
+    margin-top: 12px;
     padding: 10px 20px;
     background-color: #25d366;
     color: white;
     text-decoration: none;
     border-radius: 25px;
-    font-size: 16px;
     font-weight: bold;
-    text-shadow: none;
-    transition: background 0.3s ease;
-}
-
-.btn-whatsapp:hover {
-    background-color: #128c7e;
+    font-size: 0.85rem;
 }
 
 .footer {
     background: url("footer.png");
     height: 80px;
-    width: 100%;
-} 
+}
+
+/* Media Query para celulares muy pequeños */
+@media (max-width: 480px) {
+    .foto { width: 90px; height: 90px; }
+    .card-container { height: 450px; }
+    .trasera h1 { font-size: 1.5rem; }
+}
