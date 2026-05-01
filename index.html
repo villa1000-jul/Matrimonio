@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Invitación Matrimonio - Diana y Germán</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
     <header class="header">
         <div class="text">
@@ -16,24 +14,23 @@
     </header>
 
     <main class="contenido">
-        <div class="decoraciones">
-            <img src="foto1.png" class="foto pos-tl">
-            <img src="foto2.png" class="foto pos-tr">
-            <img src="foto3.png" class="foto pos-bl">
-        </div>
-        
         <div class="card-container">
+            <!-- Fotos superpuestas -->
+            <div class="decoraciones">
+                <img src="foto1.png" class="foto pos-tl" alt="Foto 1">
+                <img src="foto2.png" class="foto pos-tr" alt="Foto 2">
+                <img src="foto3.png" class="foto pos-bl" alt="Foto 3">
+            </div>
+
             <div class="carta" id="invitacionCard">
-                <!-- CARA FRONTAL -->
                 <div class="cara frontal">
                     <h1>Invitación Matrimonio</h1>
                     <p style="font-size: 50px;">✉️</p>
                     <p>Toca para abrir</p>
                 </div>
 
-                <!-- CARA TRASERA -->
                 <div class="cara trasera">
-                    <h2>En lo que hemos podido crecer, madurar, aprender muchas cosas y construir una linda familia... finalmente hemos decidido que...</h2>
+                    <p class="intro">En lo que hemos podido crecer, madurar, aprender muchas cosas y construir una linda familia... finalmente hemos decidido que...</p>
                     <h1>¡Nos casamos!</h1>
                     
                     <div class="detalles">
@@ -46,17 +43,14 @@
 
                     <div class="confirmacion">
                         <p><strong>¡Lluvia de sobres!</strong></p>
-                        <a href="#" id="btnWhatsApp" class="btn-whatsapp">
-                            Confirmar Asistencia 📱
-                        </a>
+                        <a href="#" id="btnWhatsApp" class="btn-whatsapp">Confirmar Asistencia 📱</a>
                     </div>
                 </div>
             </div>
         </div>
-    </main> 
+    </main>
 
     <footer class="footer"></footer>
-
     <script src="script.js"></script>
 </body>
 </html>
