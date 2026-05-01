@@ -5,13 +5,15 @@
 }
 
 body {
+
     display: flex;
     flex-direction: column;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Playwrite NO', cursive; 
     background-color: #ffffff;
     overflow-x: hidden;
     width: 100%;
 }
+
 
 header {
     display: flex;
@@ -55,16 +57,16 @@ main {
 
 .foto {
     position: absolute;
-    width: 200px;
-    height: 200px;
+    width: 130px;
+    height: 130px;
     object-fit: cover;
     border: 5px solid white;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-.pos-tl { top: -40px; left: -30px; transform: rotate(-12deg); }
-.pos-tr { top: -40px; right: -30px; transform: rotate(15deg); }
-.pos-bl { bottom: -40px; left: -30px; transform: rotate(-8deg); }
+.pos-tl { top: -50px; left: -70px; transform: rotate(-12deg); }
+.pos-tr { top: -50px; right: -90px; transform: rotate(15deg); }
+.pos-bl { bottom: -50px; left: -90px; transform: rotate(-8deg); }
 
 .carta {
     width: 100%;
@@ -101,16 +103,16 @@ main {
     background-image: url("fondo.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover; /* Ajusta la imagen al tamaño de la carta sin cortarla */
+    background-size: contain; /* Ajusta la imagen al tamaño de la carta sin cortarla */
 }
 
 .trasera {
     transform: rotateY(180deg);
 }
 
-.intro { font-size: 0.95rem; line-height: 1.2; margin-bottom: 8px; }
-.trasera h1 { font-size: 1.9rem; color: #ad9776; font-family: serif; margin-bottom: 8px; }
-.detalles p { font-size: 0.95rem; margin: 2px 0; }
+.intro { font-size: 0.8rem; line-height: 1.2; margin-bottom: 8px; }
+.trasera h1 { font-size: 1.8rem; color: #ad9776; font-family: serif; margin-bottom: 8px; }
+.detalles p { font-size: 0.85rem; margin: 2px 0; }
 
 .btn-whatsapp {
     display: inline-block;
