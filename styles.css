@@ -101,16 +101,16 @@ main {
     background-image: url("fondo.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain; /* Ajusta la imagen al tamaño de la carta sin cortarla */
+    background-size: cover; /* Ajusta la imagen al tamaño de la carta sin cortarla */
 }
 
 .trasera {
     transform: rotateY(180deg);
 }
 
-.intro { font-size: 1.25rem; line-height: 1.2; margin-bottom: 8px; }
-.trasera h1 { font-size: 2.2rem; color: #ad9776; font-family: serif; margin-bottom: 8px; }
-.detalles p { font-size: 1.25rem; margin: 2px 0; }
+.intro { font-size: 1.35rem; line-height: 1.2; margin-bottom: 8px; }
+.trasera h1 { font-size: 2.3rem; color: #ad9776; font-family: serif; margin-bottom: 8px; }
+.detalles p { font-size: 1.35rem; margin: 2px 0; }
 
 .btn-whatsapp {
     display: inline-block;
