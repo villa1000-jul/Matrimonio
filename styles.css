@@ -10,14 +10,16 @@ body {
     font-family: 'Playwrite NO', cursive; 
     background-image: url("fondo.png");
     
-    background-size: cover;         /* Ajusta la imagen para cubrir toda la pantalla */
-    background-repeat: no-repeat;  /* Evita que se repita como mosaico */
-    background-attachment: fixed;  /* Hace que el fondo se quede quieto al hacer scroll */
-    background-position: center;   /* Centra la imagen */
+    /* Configuración para móviles */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed; /* Crucial para que el fondo no se mueva al bajar */
     
-    overflow-x: hidden;
+    min-height: 100vh; /* Asegura que el cuerpo ocupe toda la pantalla */
     width: 100%;
     margin: 0;
+    overflow-x: hidden;
 }
 
 
