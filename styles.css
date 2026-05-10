@@ -111,12 +111,12 @@ main {
     background-color: white;
 }
 
-/* AJUSTE DE LA IMAGEN DE CORAZONES */
+
 .frontal {
     background-image: url("fondo.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover; /* Ajusta la imagen al tamaño de la carta sin cortarla */
+    background-size: cover;
 }
 
 .trasera {
@@ -153,7 +153,6 @@ main {
     height: 80px;
 }
 
-/* Media Query para celulares muy pequeños */
 @media (max-width: 480px) {
     .foto { width: 90px; height: 90px; }
     .card-container { height: 450px; }
