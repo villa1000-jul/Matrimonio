@@ -5,15 +5,20 @@
 }
 
 body {
-
     display: flex;
     flex-direction: column;
     font-family: 'Playwrite NO', cursive; 
-    background: url("fondo.png");
-    background-size:cover;
+    background-image: url("fondo.png");
+    
+    background-size: cover;         /* Ajusta la imagen para cubrir toda la pantalla */
+    background-repeat: no-repeat;  /* Evita que se repita como mosaico */
+    background-attachment: fixed;  /* Hace que el fondo se quede quieto al hacer scroll */
+    background-position: center;   /* Centra la imagen */
+    
     overflow-x: hidden;
     width: 100%;
-} 
+    margin: 0;
+}
 
 
 header {
