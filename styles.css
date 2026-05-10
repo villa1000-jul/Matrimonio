@@ -10,7 +10,7 @@ body {
     flex-direction: column;
     font-family: 'Playwrite NO', cursive; 
     background: url("fondo.png");
-    backgroung-size:cover;
+    background-size:cover;
     overflow-x: hidden;
     width: 100%;
 } 
@@ -43,7 +43,7 @@ main {
     padding: 40px 10px;
 }
 
-/* Contenedor con tamaño adaptable */
+
 .card-container {
     width: 90%;
     max-width: 500px;
