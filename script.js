@@ -1,9 +1,10 @@
+const audio = document.getElementById('musica');
 const card = document.getElementById('invitacionCard');
 const btnWhatsApp = document.getElementById('btnWhatsApp');
 
-// Manejar el giro de la carta
+
 card.addEventListener('click', function(e) {
-    // Si el clic viene del botón de WhatsApp, no giramos la carta
+
     if (e.target.id === 'btnWhatsApp') return;
     
     card.classList.toggle('flipped');
@@ -19,3 +20,6 @@ btnWhatsApp.addEventListener('click', function(e) {
     
     window.open(url, '_blank');
 }); 
+document.addEventListener('click', () => {
+    audio.play();
+}, { once: true });
