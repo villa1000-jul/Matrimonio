@@ -78,9 +78,9 @@ main {
 }
 
 .pos-tl { top: -65px; left: -50px; transform: rotate(-12deg); }
-.pos-tr { top: -65px; right: -55px; transform: rotate(15deg); }
+.pos-tr { top: -65px; right: -62px; transform: rotate(15deg); }
 .pos-bl { bottom: -30px; left: -50px; transform: rotate(-8deg); }
-.pos-br { bottom: -30px; right: -55px; transform: rotate(8deg); }
+.pos-br { bottom: -30px; right: -62px; transform: rotate(8deg); }
 
 .carta {
     width: 100%;
