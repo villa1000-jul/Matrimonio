@@ -80,7 +80,7 @@ main {
 .pos-tl { top: -65px; left: -50px; transform: rotate(-12deg); }
 .pos-tr { top: -65px; right: -50px; transform: rotate(15deg); }
 .pos-bl { bottom: -30px; left: -50px; transform: rotate(-8deg); }
-.pos-br { bottom: -30px; left: 230px; transform: rotate(8deg); }
+.pos-br { bottom: -30px; left: 150px; transform: rotate(8deg); }
 
 .carta {
     width: 100%;
